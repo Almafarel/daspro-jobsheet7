@@ -1,8 +1,9 @@
 import java.util.Scanner;
-public class SiakadWhile02 {
+public class ModifikasiWhile02 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int nilai, jml, i = 0;
+        boolean adaNilaiA = false;
 
         System.out.print("Masukkan jumlah mahasiswa: ");
         jml = sc.nextInt();
@@ -30,10 +31,15 @@ public class SiakadWhile02 {
             System.out.println("Nilai mahasiswa ke-" + (i + 1) + " adalah D");
            } else {
             System.out.println("Nilai mahasiswa ke-" + (i + 1) + " adalah E");
-           }
+           } if (adaNilaiA) {
+            System.out.print("Bagus pertahankan nilainya");
+           } if (nilai <= 100 ) {
+            adaNilaiA = true;
            i++;
         }
 
     }
+}
     
 }
+
